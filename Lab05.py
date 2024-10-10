@@ -1,4 +1,4 @@
-ip_str = input("Please enter IP Address: ") #192.168.1.10
+# ip_str = input("Please enter IP Address: ") #192.168.1.10
 def is_valid_part(part_str):
     try:
         part_int = int(part_str)
@@ -10,6 +10,7 @@ def is_valid_part(part_str):
     except ValueError:
         print("Invalid part detected.")
         return False
+
 def decimal_to_binary(n):
     if n == 0:
         return "0"
@@ -23,3 +24,5 @@ def binary_to_decimal(b):
         return int(b)
     return 2 ** (len_b - 1) * int(b[0]) + binary_to_decimal(b[1:])
 
+
+print(binary_to_decimal('11001'))
